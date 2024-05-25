@@ -404,4 +404,5 @@ main .about-intro-container h1 {
     height: 400px;
     width: 100%;
     z-index: 400;
+    margin-bottom: 30px;
 }
