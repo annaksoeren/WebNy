@@ -1,0 +1,141 @@
+* {
+    border-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    column-gap: 200px;
+    background-color: var(--site-color-01-hover); /* --aboutMe-main */
+    background-image: none;
+}
+
+.contact-container {
+    width: 50%;
+    height: 80%;
+    background-color: var(--site-color-01-60);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.contact-container button {
+    width: 120px;
+    height: 60px;
+    color: #fff;
+    background-color: var(--aboutMe-main-90);
+    border-radius: 20px;
+    border: 2px solid var(--site-color-01-20);
+    text-align: center;
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 25%;
+    justify-self: center;
+}
+
+.contact-container button:hover {
+    background-color: var(--aboutMe-main-50);
+}
+
+main .contact-container h1 {
+    width: 100%;
+    font-size: 5rem;
+    line-height: 1.1; 
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-basis: 100%; /*bruges til at få h1 til at stå på sin egen linje*/
+    text-transform: uppercase;
+    color: var(--footer-main);
+    color: #fff;
+    cursor: default;
+}
+
+main .contact-container p {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 1.1; 
+    text-align: center;
+    padding: 20px 20px;
+    flex-basis: 100%; /*bruges til at få p til at stå på sin egen linje*/
+    color: var(--footer-main);
+    color: #fff;
+    cursor: default;
+}
+
+input, textarea, label {
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    background-color: var(--site-color-01-20); 
+    cursor: pointer;
+    border: 0;
+    border: 2px solid var(--site-color-01-60);
+    padding: 10px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--site-color-01);
+    margin: 10px;
+    color: #fff;
+}
+
+/* label {
+    cursor: default;
+} */
+
+/* input[type = submit] {
+    width: 100px;
+    background-color: var(--site-color-01-60);
+    padding: 10px;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    justify-self: center;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    border-bottom: 0;
+} */
+
+/* input[type = submit]:hover {
+    background-color: var(--site-color-01);
+} */
+
+input:focus, textarea:focus {
+    outline: 1px solid var(--site-color-01-60);
+    background-color: var(--aboutMe-main-50);
+}
+
+.contactform input {
+    color: #fff;
+}
+
+/* .alertDanger {
+    width: 100%;
+    height: fit-content;
+    background-color: #ff7777;
+    color: #fff;
+}
+
+.alertMailSend {
+    width: 100%;
+    height: fit-content;
+    background-color: #90c48c;
+    color: #fff;
+} */

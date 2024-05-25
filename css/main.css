@@ -1,0 +1,266 @@
+:root { /*bruges til at lave farver som kan refereres til i hele koden, brug var() når man referer til dem*/
+    --site-color-01: #ff0095;
+    --site-color-01-60: #ff009575;
+    --site-color-01-20: #ff00953f;
+    --site-color-01-hover: #930056;
+    --site-color-01-hover-20: #93005651;
+    --footer-main: #4f002e;
+    --footer-main-80: #4f002eb6;
+    --footer-main-20: #4f002e30;
+    --aboutMe-main: #ffc4e7;
+    --aboutMe-main-90: #ffc4e7ea; 
+    --aboutMe-main-50: #ffc4e793; 
+    font-size: 62.5%; /*10px*/
+}
+
+body {
+    background-color: #ff96d3;
+}
+
+body:after { /*så billederne ikke flicker*/
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/fb-hover.png) url(../img/ig-hover.png);
+}
+
+.wrapper-main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.3;
+    color: #000;
+    font-family: "Barlow", sans-serif;
+    font-weight:600;
+    text-transform: uppercase; 
+}
+
+h2 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: #000;
+    font-family: "Barlow", sans-serif;
+    font-weight:600;
+    text-transform: uppercase; 
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #000;
+    font-family: "Barlow", sans-serif;
+}
+
+a {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #000;
+    font-family: "Barlow", sans-serif;
+    cursor: pointer;
+}
+
+button {
+    font-family: "Barlow", sans-serif;
+}
+
+label, input, form {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.3rem;
+}
+
+.header-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px; /*header height*/
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header-main-logo { /*logo header*/
+    width: fit-content;
+    height: 100%;
+    /*background-color: #54d1a7;*/
+    padding-left: 60px;
+    display: flex;
+}
+
+.header-main-logo img {
+    height: 40px; /*halvt så høj som højden af .header-main*/
+    align-self: center;
+}
+
+.header-main-nav { /*header gallery, contact....*/
+    width: fit-content;
+    height: 100%;
+    /*background-color: #bdbcff;*/
+}
+
+.header-main-nav ul {
+    list-style: none; /* får bulletpoints til at forsvinde*/
+    margin-left: 30px;
+}
+
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+}
+
+.header-main-nav ul li a { /*skrift: home, contact ... header*/
+    padding: 0 10px 0 10px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 60px; /*header height*/
+    color: var(--site-color-01);
+    display: block;
+    height: 100%;
+}
+
+.header-main-nav ul li a:hover {
+    color: var(--site-color-01-hover);
+    text-transform: uppercase;
+}
+
+.header-main-some { /*insta og facebook header*/
+    width: fit-content;
+    height: 100%;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-main-some-fb {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/fb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-some-fb:hover {
+    background-image: url(../img/fb-hover.png);
+}
+
+.header-main-some-ig {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/ig.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-some-ig:hover {
+    background-image: url(../img/ig-hover.png);
+}
+
+/* footer*/
+.footer-main {
+    width: 100%;
+    padding: 60px 0 100px;
+    background-color: var(--footer-main);
+    bottom: 0;
+    display: flex;
+}
+
+.footer-main-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-sjip {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-sjip img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.footer-sjip p {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 20px 20px 0;
+    color: #ff96d3;
+}
+
+.footer-link {
+    padding: 10px 20px;
+    border: 2px dotted #ff96d370;
+    color: #ff96d3;
+    font-weight: 800;
+    margin: 50px 0 50px;
+}
+
+.footer-link:hover {
+    border: 2px dotted var(--site-color-01);
+    color: var(--site-color-01);
+    font-weight: 800;
+    transition: all ease-in-out 200ms;
+}
+
+.footer-sitemap {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-sitemap p{
+    color: #ff96d3;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.footer-sitemap a{
+    color: #ff96d3;
+    line-height: 2; /*30px*/
+}
+
+.footer-sitemap a:hover{
+    color: var(--site-color-01);
+    line-height: 2;
+}
+
+.footer-sitemap ul:nth-child(1) {
+    flex-basis: 200px;
+    margin-left: 55px;
+    border-left: 2px dotted var(--site-color-01);
+    padding-left: 20px;
+}
+
+.footer-sitemap ul:nth-child(2) {
+    flex-basis: 400px;
+}
+
+.footer-sitemap ul:nth-child(3) {
+    flex-basis: 250px;
+}
+
+.footer-sitemap ul:nth-child(4) {
+    flex-grow: 1;
+}
+
+.footer-sitemap ul:nth-child(4) li{
+    clear: both;
+    float: right;
+    margin-right: 55px;
+}
+
+/* burger menu should only show on phone*/
+.burger-menu .burger-menu-button{
+    display: none;
+}

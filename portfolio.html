@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna Sørensen Portfolio</title>
+    <!-- add jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--adding fonts using CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--links to stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+  </head>
+  <body>
+    <!-- header-->
+    <header class="header-main">
+      <div class="header-main-logo">
+        <img src="img/logo.png" alt="logo" />
+        <nav class="header-main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- "#" er bare placeholder indtil vi finder et link-->
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-main-some">
+        <a href="https://www.facebook.com/anna.kaersgaard"
+          ><div class="header-main-some-fb"></div
+        ></a>
+        <a href="https://www.instagram.com/annaksoerensen/"
+          ><div class="header-main-some-ig"></div
+        ></a>
+      </div>
+    </header>
+
+    <!-- p1 -->
+    <main>
+      <div class="portfolio-background">
+        <div class="portfolio-main">
+          <div id="portfolio-container">
+            <div>
+              <h1>Portfolio</h1>
+              <p id="portfolio-1">
+                Portfolio of my semester projects at the Medialogy Bachelor at
+                AAU cph campus.
+              </p>
+              <p id="portfolio-2">2021-2024</p>
+            </div>
+            <div class="portfolio-project-container">
+              <div class="portfolio-button">
+                <!-- <button type="button">
+                <i class="arrow left"></i>
+              </button> -->
+              </div>
+              <div class="portfolio-projects">
+                <div class="portfolio-projects-box">
+                  <div>
+                    <p class="portfolio-project-title">Project 1</p>
+                    <p class="portfolio-project-undertitle">
+                      Waste sorting game for 2. graders
+                    </p>
+                  </div>
+                  <div class="portfolio-project-information-container">
+                    <div class="portfolio-theme-buttons">
+                      <div class="portfolio-theme-container">
+                        <p class="portfolio-theme">Theme:</p>
+                        <p class="portfolio-theme-description">
+                          FN’s 13th goal, Climate action, Waste sorting.
+                        </p>
+                      </div>
+                      <div class="portfolio-abstract-container1">
+                        <button
+                          type="button"
+                          class="portfolio-abstract-button1"
+                          onclick="openPopup1()"
+                        >
+                          See Abstract
+                        </button>
+                        <div
+                          class="portfolio-abstract-popup1"
+                          id="portfolio-abstract-popup1"
+                        >
+                          <p>
+                            <b>Abstract 1</b> <br /><br />This report focuses on
+                            the potential for a game to help the younger
+                            generation understand more about waste sorting.
+                            Based on extensive research surrounding waste
+                            sorting, global warming, alternative solutions and
+                            our target group, a tablet game was created. The
+                            functionality and teaching ability of our game was
+                            tested through a semi-structured interview method
+                            followed by a data-analysis on fellow students and
+                            one child for the expert test. The results showed an
+                            overall positive opinion on the game's design and
+                            understanding of the game's intention. Though, the
+                            game’s mechanics were mostly criticized. Discussion
+                            of improvements, solutions and future work of the
+                            project explains how the test should have been
+                            conducted more appropriately to gain usable results,
+                            and to later on improve upon the mechanics of the
+                            game.
+                          </p>
+                          <button type="button" onclick="closePopup1()">
+                            Exit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-picture">
+                      <img src="img/Portfolio/P1.png" alt="P1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--right clkck button-->
+              <div class="portfolio-button">
+                <!-- <button type="button" hidden>
+                <i class="arrow right"></i>
+              </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--P2-->
+
+        <div class="portfolio-main">
+          <div id="portfolio-container">
+            <div class="portfolio-project-container">
+              <div class="portfolio-button">
+                <!-- <button type="button">
+                <i class="arrow left"></i>
+              </button> -->
+              </div>
+              <div class="portfolio-projects">
+                <div class="portfolio-projects-box">
+                  <div>
+                    <p class="portfolio-project-title">Project 2</p>
+                    <p class="portfolio-project-undertitle">
+                      A Redesign of The Moodle Application
+                    </p>
+                  </div>
+                  <div class="portfolio-project-information-container">
+                    <div class="portfolio-theme-buttons">
+                      <div class="portfolio-theme-container">
+                        <p class="portfolio-theme">Theme:</p>
+                        <p class="portfolio-theme-description">
+                          Mobile Usability Issues
+                        </p>
+                      </div>
+                      <div class="portfolio-abstract-container2">
+                        <button
+                          type="button"
+                          class="portfolio-abstract-button2"
+                          onclick="openPopup2()"
+                        >
+                          See Abstract
+                        </button>
+                        <div
+                          class="portfolio-abstract-popup2"
+                          id="portfolio-abstract-popup2"
+                        >
+                          <p>
+                            <b>Abstract 2</b> <br /><br />This report focuses on
+                            the potential for a game to help the younger
+                            generation understand more about waste sorting.
+                            Based on extensive research surrounding waste
+                            sorting, global warming, alternative solutions and
+                            our target group, a tablet game was created. The
+                            functionality and teaching ability of our game was
+                            tested through a semi-structured interview method
+                            followed by a data-analysis on fellow students and
+                            one child for the expert test. The results showed an
+                            overall positive opinion on the game's design and
+                            understanding of the game's intention. Though, the
+                            game’s mechanics were mostly criticized. Discussion
+                            of improvements, solutions and future work of the
+                            project explains how the test should have been
+                            conducted more appropriately to gain usable results,
+                            and to later on improve upon the mechanics of the
+                            game.
+                          </p>
+                          <button type="button" onclick="closePopup2()">
+                            Exit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-picture">
+                      <img src="img/Portfolio/P2.png" alt="P2" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--right clkck button-->
+              <div class="portfolio-button">
+                <!-- <button type="button">
+                <i class="arrow right"></i>
+              </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--P3-->
+
+        <div class="portfolio-main">
+          <div id="portfolio-container">
+            <div class="portfolio-project-container">
+              <div class="portfolio-button">
+                <!-- <button type="button">
+                <i class="arrow left"></i>
+              </button> -->
+              </div>
+              <div class="portfolio-projects">
+                <div class="portfolio-projects-box">
+                  <div>
+                    <p class="portfolio-project-title">Project 3</p>
+                    <p class="portfolio-project-undertitle">
+                      Color detection for people with color vision deficiency
+                    </p>
+                  </div>
+                  <div class="portfolio-project-information-container">
+                    <div class="portfolio-theme-buttons">
+                      <div class="portfolio-theme-container">
+                        <p class="portfolio-theme">Theme:</p>
+                        <p class="portfolio-theme-description">
+                          Computer Vision
+                        </p>
+                      </div>
+                      <div class="portfolio-abstract-container3">
+                        <button
+                          type="button"
+                          class="portfolio-abstract-button3"
+                          onclick="openPopup3()"
+                        >
+                          See Abstract
+                        </button>
+                        <div
+                          class="portfolio-abstract-popup3"
+                          id="portfolio-abstract-popup3"
+                        >
+                          <p>
+                            <b>Abstract 3</b> <br /><br />This report focuses on
+                            the potential for a game to help the younger
+                            generation understand more about waste sorting.
+                            Based on extensive research surrounding waste
+                            sorting, global warming, alternative solutions and
+                            our target group, a tablet game was created. The
+                            functionality and teaching ability of our game was
+                            tested through a semi-structured interview method
+                            followed by a data-analysis on fellow students and
+                            one child for the expert test. The results showed an
+                            overall positive opinion on the game's design and
+                            understanding of the game's intention. Though, the
+                            game’s mechanics were mostly criticized. Discussion
+                            of improvements, solutions and future work of the
+                            project explains how the test should have been
+                            conducted more appropriately to gain usable results,
+                            and to later on improve upon the mechanics of the
+                            game.
+                          </p>
+                          <button type="button" onclick="closePopup3()">
+                            Exit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-picture">
+                      <img src="img/Portfolio/P3.png" alt="P3" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--right clkck button-->
+              <div class="portfolio-button">
+                <!-- <button type="button">
+                <i class="arrow right"></i>
+              </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--P4-->
+
+        <div class="portfolio-main">
+          <div id="portfolio-container">
+            <div class="portfolio-project-container">
+              <div class="portfolio-button">
+                <!-- <button type="button">
+                <i class="arrow left"></i>
+              </button> -->
+              </div>
+              <div class="portfolio-projects">
+                <div class="portfolio-projects-box">
+                  <div>
+                    <p class="portfolio-project-title">Project 4</p>
+                    <p class="portfolio-project-undertitle">
+                      Piano chord learning through serious games
+                    </p>
+                  </div>
+                  <div class="portfolio-project-information-container">
+                    <div class="portfolio-theme-buttons">
+                      <div class="portfolio-theme-container">
+                        <p class="portfolio-theme">Theme:</p>
+                        <p class="portfolio-theme-description">
+                          Interactive sound systems
+                        </p>
+                      </div>
+                      <div class="portfolio-abstract-container4">
+                        <button
+                          type="button"
+                          class="portfolio-abstract-button4"
+                          onclick="openPopup4()"
+                        >
+                          See Abstract
+                        </button>
+                        <div
+                          class="portfolio-abstract-popup4"
+                          id="portfolio-abstract-popup4"
+                        >
+                          <p>
+                            <b>Abstract 4</b> <br /><br />This report focuses on
+                            the potential for a game to help the younger
+                            generation understand more about waste sorting.
+                            Based on extensive research surrounding waste
+                            sorting, global warming, alternative solutions and
+                            our target group, a tablet game was created. The
+                            functionality and teaching ability of our game was
+                            tested through a semi-structured interview method
+                            followed by a data-analysis on fellow students and
+                            one child for the expert test. The results showed an
+                            overall positive opinion on the game's design and
+                            understanding of the game's intention. Though, the
+                            game’s mechanics were mostly criticized. Discussion
+                            of improvements, solutions and future work of the
+                            project explains how the test should have been
+                            conducted more appropriately to gain usable results,
+                            and to later on improve upon the mechanics of the
+                            game.
+                          </p>
+                          <button type="button" onclick="closePopup4()">
+                            Exit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-picture">
+                      <img src="img/Portfolio/P4.png" alt="P4" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--right clkck button-->
+              <div class="portfolio-button">
+                <!-- <button type="button">
+                <i class="arrow right"></i>
+              </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--P5-->
+
+        <div class="portfolio-main">
+          <div id="portfolio-container">
+            <div class="portfolio-project-container">
+              <div class="portfolio-button">
+                <!-- <button type="button">
+                <i class="arrow left"></i>
+              </button> -->
+              </div>
+              <div class="portfolio-projects">
+                <div class="portfolio-projects-box">
+                  <div>
+                    <p class="portfolio-project-title">Project 5</p>
+                    <p class="portfolio-project-undertitle">
+                      ActiVR – Virtual reality exercise for older adults
+                    </p>
+                  </div>
+                  <div class="portfolio-project-information-container">
+                    <div class="portfolio-theme-buttons">
+                      <div class="portfolio-theme-container">
+                        <p class="portfolio-theme">Theme:</p>
+                        <p class="portfolio-theme-description">
+                          Interactive sound systems
+                        </p>
+                      </div>
+                      <div class="portfolio-abstract-container5">
+                        <button
+                          type="button"
+                          class="portfolio-abstract-button5"
+                          onclick="openPopup5()"
+                        >
+                          See Abstract
+                        </button>
+                        <div
+                          class="portfolio-abstract-popup5"
+                          id="portfolio-abstract-popup5"
+                        >
+                          <p>
+                            <b>Abstract 5</b> <br /><br />This report focuses on
+                            the potential for a game to help the younger
+                            generation understand more about waste sorting.
+                            Based on extensive research surrounding waste
+                            sorting, global warming, alternative solutions and
+                            our target group, a tablet game was created. The
+                            functionality and teaching ability of our game was
+                            tested through a semi-structured interview method
+                            followed by a data-analysis on fellow students and
+                            one child for the expert test. The results showed an
+                            overall positive opinion on the game's design and
+                            understanding of the game's intention. Though, the
+                            game’s mechanics were mostly criticized. Discussion
+                            of improvements, solutions and future work of the
+                            project explains how the test should have been
+                            conducted more appropriately to gain usable results,
+                            and to later on improve upon the mechanics of the
+                            game.
+                          </p>
+                          <button type="button" onclick="closePopup5()">
+                            Exit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-picture">
+                      <img src="img/Portfolio/P5.png" alt="P5" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--right clkck button-->
+              <div class="portfolio-button">
+                <!-- <button type="button">
+                <i class="arrow right"></i>
+              </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="youtube-videos">
+      <p>AV-productions of the projects:</p>
+      <div>
+        <iframe
+          class="latestVideo"
+          vidnum="0"
+          width="450"
+          height="255"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div>
+        <iframe
+          class="latestVideo"
+          vidnum="1"
+          width="450"
+          height="255"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div>
+        <iframe
+          class="latestVideo"
+          vidnum="2"
+          width="450"
+          height="255"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <iframe
+          class="latestVideo"
+          vidnum="3"
+          width="450"
+          height="255"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <iframe
+          class="latestVideo"
+          vidnum="4"
+          width="450"
+          height="255"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- footer of the website-->
+    <footer class="footer-main">
+      <div class="wrapper-main footer-main-flex">
+        <div class="footer-sjip">
+          <img src="img/footer/footer1.png" alt="footer" />
+          <p>1st place at the Danish Championships <br />2018</p>
+        </div>
+        <div class="footer-sjip">
+          <img src="img/footer/footer2.png" alt="footer" />
+          <p>3rd place at European Championships <br />2019</p>
+        </div>
+        <div class="footer-sjip">
+          <img src="img/footer/footer3.png" alt="footer" />
+          <p>Waiting to compete at EC <br />2019</p>
+        </div>
+        <div class="footer-sjip">
+          <img src="img/footer/footer4.png" alt="footer" />
+          <p>Floor Check before EC <br />2019</p>
+        </div>
+        <div class="footer-sjip">
+          <img src="img/footer/footer5.png" alt="footer" />
+          <p>3rd best DDSF in the World <br />2018</p>
+        </div>
+
+        <a class="footer-link" href="contact.html">Get in touch with me</a>
+
+        <div class="footer-sitemap">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutMe.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+          <ul>
+            <li>
+              <p>
+                <br />Do not hesitate to get in touch with me if you have any
+                questions
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <li><p>Contact information:</p></li>
+            <li><p>Tlf: 50494500</p></li>
+            <li><p>anna.kaersgaard@gmail.com</p></li>
+            <!-- mangler-->
+            <li><p>LinkdIn: Anna Kærsgaard Sørensen</p></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/portfolio.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/pagenav.js"></script>
+  </body>
+</html>

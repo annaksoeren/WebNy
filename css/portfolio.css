@@ -1,0 +1,632 @@
+main {
+    width: 100%;
+    height: fit-content; 
+}
+
+.portfolio-background {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    column-gap: 200px;
+    background-image: none;
+    flex-wrap: wrap;
+    background-color: var(--site-color-01-hover); /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--site-color-01-hover), var(--aboutMe-main));
+}
+
+main h1 {
+   text-align: center;
+   color: #fff;
+   margin-top: 30px;
+   width: 100%;
+}
+
+.portfolio-main {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#portfolio-1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#portfolio-2 {
+    text-align: center;
+    color: var(--aboutMe-main-50);
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#portfolio-container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.portfolio-project-container {
+    width: calc(100% - 60px);
+    height: fit-content;
+    margin: 20px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.portfolio-button {
+    align-items: center;
+    justify-items: center;
+    width: 100px;
+    height: 100%;
+    padding-top: 25vh;
+}
+
+/* .portfolio-button button {
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background-color: var(--aboutMe-main-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px ;
+    border-radius: 50px;
+}
+
+.portfolio-button button:hover {
+    background-color: var(--aboutMe-main-90);
+} */
+/* 
+.arrow {
+    border: solid #fff;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 8px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+} */
+
+.portfolio-projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.portfolio-projects-box {
+    width: calc(100% - 60px);
+    height: 100%;
+    background-color: var(--aboutMe-main); /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--aboutMe-main), var(--site-color-01-hover));
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.portfolio-project-title {
+    width: 100%;
+    height: fit-content;
+    color: var(--site-color-01-hover);
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.portfolio-project-undertitle {
+    width: 100%;
+    height: fit-content;
+    color: var(--site-color-01-hover);
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.portfolio-project-information-container {
+    width: 100%;
+    height: 370px;
+    /* background-color: blueviolet; */
+    margin: 15px 30px 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.portfolio-theme-buttons {
+    width: 45%;
+    height: 100%;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+.portfolio-theme-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+
+.portfolio-theme {
+    font-size: 2.4rem;
+    color: var(--site-color-01-hover);
+    
+}
+
+.portfolio-theme-description {
+    width: 100%;
+    font-size: 1.8rem;
+    color: var(--site-color-01-hover);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+
+
+/*-----------ABSTRACT-------------*/
+/* .portfolio-abstract-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.portfolio-abstract-button {
+    width: 160px;
+    height: 60px;
+    color: var(--site-color-01-hover);
+    background-color: var(--aboutMe-main);
+    border: 1px solid var(--site-color-01-20);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.portfolio-abstract-button:hover {
+    background-color: var(--aboutMe-main-50);
+}
+
+.portfolio-abstract-popup {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: var(--aboutMe-main);
+    top: 0;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.1);
+    z-index: 111;
+    padding: 40px;
+    visibility: hidden;
+    transition: 0.5s, top 0.5s;
+    position: fixed;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.portfolio-abstract-popup button {
+    width: 100px;
+    height: 40px;
+    margin: 10px 0;
+    bottom: 0;
+    background-color: var(--site-color-01-hover-20);
+    border: 1 solid var(--aboutMe-main);
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.portfolio-abstract-popup button:hover {
+    background-color: var(--site-color-01-hover);
+}
+*/
+.portfolio-picture {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    background-color: var(--site-color-01-hover-20);
+    justify-content: center;
+    align-content: center;
+    margin-right: 10px;
+    border: 2px solid var(--footer-main-20);
+    border-radius: 20px;
+} 
+/*FORSØG*/
+/*P1*/
+    .portfolio-abstract-container1 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .portfolio-abstract-button1 {
+        width: 160px;
+        height: 60px;
+        color: var(--site-color-01-hover);
+        background-color: var(--aboutMe-main);
+        border: 1px solid var(--site-color-01-20);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        outline: none;
+        cursor: pointer;
+        font-size: 1.8rem;
+        font-weight: 500;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .portfolio-abstract-button1:hover {
+        background-color: var(--aboutMe-main-50);
+    }
+    .portfolio-abstract-popup1 {
+        width: 600px;
+        height: 600px;
+        border-radius: 10px;
+        background-color: var(--aboutMe-main);
+        top: 0;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%) scale(0.1);
+        z-index: 111;
+        padding: 40px;
+        visibility: hidden;
+        transition: 0.5s, top 0.5s;
+        position: fixed;
+    }
+    .open-popup1 {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .portfolio-abstract-popup1 button {
+        width: 100px;
+        height: 40px;
+        margin: 10px 0;
+        bottom: 0;
+        background-color: var(--site-color-01-hover-20);
+        border: 1 solid var(--aboutMe-main);
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    .portfolio-abstract-popup1 button:hover {
+        background-color: var(--site-color-01-hover);
+    }
+ /*p2*/
+    .portfolio-abstract-container2 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .portfolio-abstract-button2 {
+        width: 160px;
+        height: 60px;
+        color: var(--site-color-01-hover);
+        background-color: var(--aboutMe-main);
+        border: 1px solid var(--site-color-01-20);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        outline: none;
+        cursor: pointer;
+        font-size: 1.8rem;
+        font-weight: 500;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .portfolio-abstract-button2:hover {
+        background-color: var(--aboutMe-main-50);
+    }
+    .portfolio-abstract-popup2 {
+        width: 600px;
+        height: 600px;
+        border-radius: 10px;
+        background-color: var(--aboutMe-main);
+        top: 0;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%) scale(0.1);
+        z-index: 111;
+        padding: 40px;
+        visibility: hidden;
+        transition: 0.5s, top 0.5s;
+        position: fixed;
+    }
+    .open-popup2 {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .portfolio-abstract-popup2 button {
+        width: 100px;
+        height: 40px;
+        margin: 10px 0;
+        bottom: 0;
+        background-color: var(--site-color-01-hover-20);
+        border: 1 solid var(--aboutMe-main);
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    .portfolio-abstract-popup2 button:hover {
+        background-color: var(--site-color-01-hover);
+    }
+ /*p3*/
+    .portfolio-abstract-container3 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .portfolio-abstract-button3 {
+        width: 160px;
+        height: 60px;
+        color: var(--site-color-01-hover);
+        background-color: var(--aboutMe-main);
+        border: 1px solid var(--site-color-01-20);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        outline: none;
+        cursor: pointer;
+        font-size: 1.8rem;
+        font-weight: 500;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .portfolio-abstract-button3:hover {
+        background-color: var(--aboutMe-main-50);
+    }
+    .portfolio-abstract-popup3 {
+        width: 600px;
+        height: 600px;
+        border-radius: 10px;
+        background-color: var(--aboutMe-main);
+        top: 0;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%) scale(0.1);
+        z-index: 111;
+        padding: 40px;
+        visibility: hidden;
+        transition: 0.5s, top 0.5s;
+        position: fixed;
+    }
+    .open-popup3 {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .portfolio-abstract-popup3 button {
+        width: 100px;
+        height: 40px;
+        margin: 10px 0;
+        bottom: 0;
+        background-color: var(--site-color-01-hover-20);
+        border: 1 solid var(--aboutMe-main);
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    .portfolio-abstract-popup3 button:hover {
+        background-color: var(--site-color-01-hover);
+    }
+
+/*p4*/
+    .portfolio-abstract-container4 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .portfolio-abstract-button4 {
+        width: 160px;
+        height: 60px;
+        color: var(--site-color-01-hover);
+        background-color: var(--aboutMe-main);
+        border: 1px solid var(--site-color-01-20);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        outline: none;
+        cursor: pointer;
+        font-size: 1.8rem;
+        font-weight: 500;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .portfolio-abstract-button4:hover {
+        background-color: var(--aboutMe-main-50);
+    }
+    .portfolio-abstract-popup4 {
+        width: 600px;
+        height: 600px;
+        border-radius: 10px;
+        background-color: var(--aboutMe-main);
+        top: 0;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%) scale(0.1);
+        z-index: 111;
+        padding: 40px;
+        visibility: hidden;
+        transition: 0.5s, top 0.5s;
+        position: fixed;
+    }
+    .open-popup4 {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .portfolio-abstract-popup4 button {
+        width: 100px;
+        height: 40px;
+        margin: 10px 0;
+        bottom: 0;
+        background-color: var(--site-color-01-hover-20);
+        border: 1 solid var(--aboutMe-main);
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    .portfolio-abstract-popup4 button:hover {
+        background-color: var(--site-color-01-hover);
+    }
+
+/*p5*/
+    .portfolio-abstract-container5 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .portfolio-abstract-button5 {
+        width: 160px;
+        height: 60px;
+        color: var(--site-color-01-hover);
+        background-color: var(--aboutMe-main);
+        border: 1px solid var(--site-color-01-20);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        outline: none;
+        cursor: pointer;
+        font-size: 1.8rem;
+        font-weight: 500;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .portfolio-abstract-button5:hover {
+        background-color: var(--aboutMe-main-50);
+    }
+    .portfolio-abstract-popup5 {
+        width: 600px;
+        height: 600px;
+        border-radius: 10px;
+        background-color: var(--aboutMe-main);
+        top: 0;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%) scale(0.1);
+        z-index: 111;
+        padding: 40px;
+        visibility: hidden;
+        transition: 0.5s, top 0.5s;
+        position: fixed;
+    }
+    .open-popup5 {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .portfolio-abstract-popup5 button {
+        width: 100px;
+        height: 40px;
+        margin: 10px 0;
+        bottom: 0;
+        background-color: var(--site-color-01-hover-20);
+        border: 1 solid var(--aboutMe-main);
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    .portfolio-abstract-popup5 button:hover {
+        background-color: var(--site-color-01-hover);
+    }
+/* video section*/
+
+.video-container{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--site-color-01-hover-20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.video-container p {
+    margin: 30px 0 0 0;
+    align-self: center;
+    color: #fff;
+    font-size: 3rem;
+    
+}
+
+.video-box {
+    width: 100%;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 40px;
+}
+
+
+/*----------- youtube API -----------*/
+/* api key: AIzaSyAIjAu46awFE5nIs6NjA5V8ABdmCJPQwdQ
+channel ID: UCJ-zQg5V_AReDkYJf4XCj4A
+uploads ID: UUJ-zQg5V_AReDkYJf4XCj4A
+playlist ID: PLz-U2ZsmzwR73MYx45S8Gz31cZbM2wrt5
+url: https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLz-U2ZsmzwR73MYx45S8Gz31cZbM2wrt5&key=PLz-U2ZsmzwR73MYx45S8Gz31cZbM2wrt5
+
+ */
+.youtube-videos {
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.youtube-videos iframe{
+    justify-self: center;
+    align-self: center;
+}
+
+.youtube-videos p {
+    width: 100%;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+    
+iframe{
+    padding: 1rem;
+ }
