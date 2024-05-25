@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <input type="file" />
+    <img src="" />
+    <script type="text/javascript">
+      let result;
+      let input = document.getElementsByTagName("input")[0];
+      input.oninput = (e) => {
+        let file = e.target.files[0];
+        const reader = new FileReader();
+        reader.onload = (evt) => {
+          result = evt.target.result;
+          const xhr = new XMLHttpRequest();
+          const url = "http://localhost:3000/events";
+          xhr.onload = (res) => {
+            document.getElementsByTagName("img")[0].src = res.target.response;
+          };
+
+          xhr.open("POST", url);
+          xhr.send(result);
+        };
+        reader.readAsDataURL(file);
+      };
+    </script>
+  </body>
+</html>
