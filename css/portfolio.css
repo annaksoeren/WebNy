@@ -72,29 +72,6 @@ main h1 {
     padding-top: 25vh;
 }
 
-/* .portfolio-button button {
-    width: 80px;
-    height: 80px;
-    color: #fff;
-    background-color: var(--aboutMe-main-50);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px ;
-    border-radius: 50px;
-}
-
-.portfolio-button button:hover {
-    background-color: var(--aboutMe-main-90);
-} */
-/* 
-.arrow {
-    border: solid #fff;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 8px;
-}
-
 .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -185,75 +162,6 @@ main h1 {
     margin-bottom: 20px;
 }
 
-
-
-/*-----------ABSTRACT-------------*/
-/* .portfolio-abstract-container {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.portfolio-abstract-button {
-    width: 160px;
-    height: 60px;
-    color: var(--site-color-01-hover);
-    background-color: var(--aboutMe-main);
-    border: 1px solid var(--site-color-01-20);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    outline: none;
-    cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: 500;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.portfolio-abstract-button:hover {
-    background-color: var(--aboutMe-main-50);
-}
-
-.portfolio-abstract-popup {
-    width: 600px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: var(--aboutMe-main);
-    top: 0;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%) scale(0.1);
-    z-index: 111;
-    padding: 40px;
-    visibility: hidden;
-    transition: 0.5s, top 0.5s;
-    position: fixed;
-}
-
-.open-popup {
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.portfolio-abstract-popup button {
-    width: 100px;
-    height: 40px;
-    margin: 10px 0;
-    bottom: 0;
-    background-color: var(--site-color-01-hover-20);
-    border: 1 solid var(--aboutMe-main);
-    border-radius: 10px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.6rem;
-}
-
-.portfolio-abstract-popup button:hover {
-    background-color: var(--site-color-01-hover);
-}
-*/
 .portfolio-picture {
     width: 55%;
     height: 100%;
@@ -265,7 +173,7 @@ main h1 {
     border: 2px solid var(--footer-main-20);
     border-radius: 20px;
 } 
-/*FORSØG*/
+
 /*P1*/
     .portfolio-abstract-container1 {
         width: 100%;
